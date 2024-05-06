@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0e1012;
+    text-align: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    scrollbar-width: none;
+}
+
+#text {
+    font-size: large;
+    color: #fafffd;
+}
+
+.prototype {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    margin: 30px 0;
+}
+
+.prototype label {
+    font-size: 1.25rem;
+    color: #818CF8;
+    font-weight: 400;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    background: #0e1012;
+    width: fit-content;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.prototype input {
+    color: #fafffd;
+    padding: 11px 10px;
+    font-size: 1.5rem;
+    width: 400px;
+    max-width: 80vw;
+    border: 2px #19213A solid;
+    border-radius: 5px;
+    background: #0e1012;
+}
+
+.prototype input[type="file"],
+.prototype input::placeholder {
+    color: #93999e;
+}
+
+.prototype input[type="file"].uploaded {
+    color: #fafffd;
+}
+
+.prototype input:focus {
+    outline: solid 2px #818CF8;
+}
+
+::-webkit-file-upload-button,
+::file-selector-button {
+    padding: 6px 12px;
+    gap: 8px;
+    height: 50px;
+    width: max-content;
+    border: none;
+    background: #4168de33;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    margin: 0 auto;
+    color: #818CF8;
+    margin-right: 4px;
+}
